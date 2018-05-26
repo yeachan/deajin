@@ -1,43 +1,47 @@
-<HTML>
-<HEAD>
+<html>
+   <head>
        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-       <style>
-           #MID {
-                  background-color: white;
-                  color: black;
-                  padding: 40px;
-                  text-align: center;
-                  border:2px solid DodgerBlue;
-                }
+    <style>
+    .search .input_text {
+    margin: 11px 0 0 9px;
+    width: 405px;
+    height: 23px;
+    outline: 0;
+    border: 0;
+    background-color: transparent;
+    color: #000;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+}
+.search .green_window {
+    display: inline-block;
+    width: 474px;
+    height: 41px;
+    border: 2px solid #00c73c;
+    background-color: #fff;
+}
+fieldset, img {
+    border: 0;
 
-           .USD {
-               background-color: white;
-               color: black;
-               padding: 40px;
-               text-align: center;
-               border: 2px solid Tomato;
-               } 
-       </style>
-<TITLE>대진고 수업용 HTML파일 만들기</TITLE>
-</HEAD>
-<BODY>
-  <div id="id1">
-           <h1></h1>
-       </div>
-       <div class="class1">
-           <h1>반가워</h1>
-       </div>
-       <div class="class1">
-           <h1>컴퓨터</h1>
-              </diV>
-        <div>
-            <ol>
-                <h1><li>Coffee</li></h1>
-                <h1><li>Tea</li></h1>
-                <h1><li>Milk</li></h1>
-            </oll>
-
-        </div>
-</BODY>
-</HTML>
+}
+form {
+    display: block;
+    margin-top: 0em;
+}
+    </style>
+   </head>
+  
+   <body>
+<div id="search" class="search">
+<form id="sform" name="sform" action="https://search.naver.com/search.naver" method="get">
+<fieldset>
+	<span class="green_window">
+	<input id="query" name="query" type="text" title="검색어 입력" maxlength="255" class="input_text" tabindex="1" accesskey="s" style="ime-mode:active;" autocomplete="off" onclick="document.getElementById('fbm').value=1;" value="">
+	<input type="submit" value="검색">
+</fieldset>
+	</form>
+</div>
+   </body>
+</html>
